@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif
+    /* background-color: black; */
+}
+
+
+
+
+
+
+.setWidth{
+    max-width: 1920px;
+    margin: auto;
+}
+
+#topSection{
+    background-image: url(imgs/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 58rem;
+
+}
+
+#nav{
+    padding: 17px 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav img{
+    width: 157px;
+}
+#nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#nav button{
+    height: 32px;
+    border-radius: 4px;
+    width: 77px;
+    border: none;
+    background-color: #e50914;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 7px;
+    cursor: pointer;
+    /* padding: 4px 16px; */
+}
+#nav button:hover{
+    background-color: rgb(193,15,25)
+}
+
+
+
+#heroSec{
+    padding: 93px 73px;
+    color: #fff;
+}
+
+#heroSec .mainHeading{
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 5rem;
+    max-width: 70vw;
+}
+
+#heroSec .nextHeading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 18px;    
+}
+
+#heroSec p{
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-top: 33px;    
+}
+
+/* #heroSec .emailInput{ */
+.emailInput{
+    max-width: 37rem;
+    display: flex;
+    margin-top: 18px;
+}
+
+/* #heroSec .emailInput input{ */
+.emailInput input{
+    transition: color 250ms cubic-bezier(0.5, 0, 0.1, 1) 0s;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.08rem;
+    line-height: 1.5rem;
+    /* padding: 1.5rem 1rem 0.5rem; */
+    padding: 0rem 0.75rem;
+    border-radius: 4px;
+    border: 1px solid rgb(95,95,97);
+    /* min-width: 15rem; */
+}
+
+
+/* #heroSec .emailInput button{ */
+.emailInput button{
+    color: #fff;
+    border:none;
+    background-color: #e50914;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 21rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-height: 3.5rem;
+    padding: 0.75rem 1.5rem;
+}
+
+
+/* #heroSec .emailInput button:hover{ */
+.emailInput button:hover{
+    background-color: rgb(193,15,25)
+}
+
+#middleSection{
+    margin-top: -243px;
+    background: linear-gradient(180deg, rgba(0, 8, 29, 0) 0%, #00081D 32.23%, #00081D 100%);
+
+}
+
+
+
+#benifits{
+    /* height: 400px; */
+    padding-top: 50px;
+    color: #fff;
+    padding: 339px 44px 0px 44px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#benifits .card{
+    background: linear-gradient(154.01deg, #E40913 -78.21%, #181049 75.33%);
+    width: 24%;
+    border-radius: 8px;
+
+    padding: 2rem min(10%, 1.5rem) 4.75rem min(10%, 1.5rem);
+    
+}
+
+#benifits .card img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+#benifits .card .heading{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+#benifits .card p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+#lowerSection{
+    background-color: #00081D;
+
+}
+
+
+#faqs{
+    color: #fff;
+    padding: 93px 73px 0 73px;
+}
+#faqs .heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#faqs .question{
+    max-width: 1165px;
+    padding: 1.6rem;
+    background-color:#132144 ;
+    margin-top: 7px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#faqs .answer{
+    max-width: 1165px;
+    padding: 1.6rem;
+    background-color:#132144 ;
+    margin-top: 1.5px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+}
+
+#faqs .hidden{
+    display: none;
+}
+
+#faqs .question i{
+    font-size:2rem ;
+}
+
+#faqs .question:hover{
+    cursor: pointer;
+    background-color: #223362;
+}
+
+
+
+#emailSection{
+    padding: 0 73px;
+}
+
+#emailSection p{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-top: 33px;    
+}
+
+
+
+
+#footer{
+    color: rgba(255, 255, 255, 0.7);
+    padding: 93px 73px 60px 73px;
+}
+
+#footer .footer1{
+    margin-bottom: 2rem;
+}
+#footer a{
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.7);
+}
+
+#footer .footer2{
+    margin-bottom: 2.5rem;
+}
+
+#footer .footer2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    
+}
+
+#footer .footer2 ul li{
+    flex-basis: calc(25%);
+    list-style: none;
+    margin-top: 12px;
+    
+}
+
+#footer .footer2 ul li a{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1;
+    cursor: pointer;
+    
+}
+
+#footer .footer2{
+    font-size: 0.875rem;
+}
+
+#footer .footer3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+#footer .footer3 select
+{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    background-color: #0f1118;
+    border-radius: 4px;
+    padding: 0.375rem 1rem 0.375rem 2.5rem;
+    position: relative;
+    left: -1rem;
+}
+
+#footer .footer3 i{
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    left: 1rem;
+}
+
+#footer .footer4{
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 2.5rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    #nav{
+        padding: 17px 29px;
+    }
+    #heroSec{
+        padding: 60px 73px;
+    }
+    #heroSec .mainHeading{
+        font-size: 3rem !important;
+        line-height: 4rem;
+    }
+    #heroSec .nextHeading{
+        font-size: 1.125rem;
+    }
+    #heroSec p{
+        font-size: 1.15rem;
+        margin-top: 31px;    
+    }
+
+    /* .emailInput{
+        width: 100%;
+    }
+    .emailInput input{
+        width: 10rem;
+    } */
+
+    #middleSection{
+        margin-top: -400px;
+    }
+
+    #benifits{
+        margin-top: 190px !important;
+        display: inline-flex;
+        gap: 10px;
+        padding: 339px 30px 0px 30px;
+    }
+    
+    #benifits .card{
+        flex-basis: calc(50% - 5px);
+        padding: 2rem 2.5rem 4.75rem 2.5rem;
+        
+    }
+    #benifits .card img{
+        margin-top: -4px;   
+    }
+    #benifits .card .heading{
+        margin-top: 0;
+    }
+
+    #footer .footer2 ul li{
+        flex-basis: calc(33%);   
+    }
+    
+}
+    
+    @media screen and (max-width: 960px) {
+        #nav {
+            height: 86px;
+        }
+        #nav img{
+            width: 90px;
+        }
+        #heroSec .mainHeading{
+            font-size: 2.5rem !important;
+            font-weight: 700;
+            line-height: 3.3rem;
+            max-width: 64vw;
+        }
+        #heroSec .nextHeading{
+            font-size: 1.125rem;
+        }
+
+        #middleSection{
+            margin-top: -446px;
+        }
+
+        #faqs .question{
+            font-size: 1.2rem;
+        }
+        
+        #faqs .answer{
+            font-size: 1.2rem;
+        }
+
+        #faqs .question i{
+            font-size:1.15rem ;
+        }
+
+        #emailSection p{
+            font-size: 1rem;
+        }
+        #footer .footer2 ul li{
+        flex-basis: calc(50%);
+    }
+
+}
+
+
+    @media screen and (max-width: 600px) {
+        #nav {
+            padding: 17px 23px;
+            height: 80px;
+        }
+        #nav img{
+            width: 90px;
+        }
+        #heroSec{
+            padding: 60px 45px;
+        }
+        #heroSec .mainHeading{
+            font-size: 2.5rem !important;
+            font-weight: 700;
+            line-height: 3.3rem;
+            max-width: 72vw;
+        }
+        #heroSec .nextHeading{
+            font-size: 1.125rem;
+            margin-top: 15px;
+        }
+        #heroSec p{
+            line-height: 1.75rem;
+            margin-top: 15px;    
+        }
+        .emailInput{
+            max-width: 37.5rem;
+            display: flex;
+            flex-direction: column;
+            /* margin-top: 18px; */
+        }
+        .emailInput input{
+            width: 100%;
+            height: 48px;
+            margin-bottom: 20px;
+        }
+        .emailInput button{
+            /* padding: 12px 24px; */
+            padding: 0;
+            margin-left: 0;
+            min-height: 0;
+            height: 48px;
+            width: 153px;
+            font-size: 1.2rem;
+        }
+
+        #middleSection{
+            margin-top: -820px;
+        }
+
+        #benifits{
+            margin-top: 613px !important;
+            display: inline-flex;
+            gap: 10px;
+            padding: 232px 25px 0px 25px;
+        }
+        
+        #benifits .card{
+            flex-basis: calc(100%);
+            padding: 2.7rem 1.5rem 4.1rem 1.5rem;
+            
+        }
+        #benifits .card img{
+            margin-top: -4px;   
+        }
+        #benifits .card .heading{
+            margin-top: 10px;
+            font-size: 1.7rem;
+            font-weight: 500;
+        }
+
+
+        #faqs{
+            padding: 93px 48px 0 48px;;
+        }
+        #faqs .heading{
+            font-size: 2rem;
+        }
+
+        #footer{
+            padding: 93px 48px 60px 48px;
+        }
+
+        #footer .footer2 ul li{
+        flex-basis: calc(100%);
+    }
+
+}

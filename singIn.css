@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.setWidth {
+    max-width: 1920px;
+    margin: auto;
+}
+
+body {
+    background-image: url(imgs/bg3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#nav {
+    padding: 17px 44px;
+}
+
+#nav img {
+    width: 175px;
+}
+
+#container {
+    width: 450px;
+    min-height: 675px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 60px 68px 40px;
+    position: relative;
+}
+
+#container .heading {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+
+#container .emailLabel,
+#container .passwordLabel {
+    color: #8c8c8c;
+    padding-left: 20px;
+    position: absolute;
+    top: 23%;
+    transform: translateY(-50%);
+    transition: font .1s ease, top .1s ease, transform .1s ease;
+    font-size: 16px;
+    cursor: auto;
+}
+
+#container .passwordLabel {
+    top: 32.7%;
+}
+
+#container #email,
+#container #password {
+    background-color: #333;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+}
+/* #container #email,
+#container #password {
+    background-color: #333;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 16px 20px 0;
+    margin-bottom: 16px;
+} */
+#container:focus-within .emailLabel {
+    top: 21%;
+    transform: translateY(-50%);
+    font-size: 11px;
+}
+
+
+#container:focus-within .passwordLabel {
+    top: 30.7%;
+    font-size: 11px;
+}
+
+#container .signInBtn {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    min-height: 37px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+#container .cont {
+    display: flex;
+    justify-content: space-between;
+    color: #b3b3b3;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.3);
+    margin-top: 2px;
+    margin-right: 4px;
+}
+
+#container .checkboxContainer {
+    display: flex;
+    align-items: center;
+}
+
+#container .checkboxContainer label,
+#container .help {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#container .cont a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+#container .cont a:hover {
+    text-decoration: underline;
+
+}
+
+#bottomContainer {
+    margin-top: 50px;
+}
+
+/* #bottomContainer .line1{
+    display: flex;
+    align-items: center;
+} */
+#bottomContainer .line1 {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 16px 0;
+}
+
+#bottomContainer .line1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#bottomContainer .line1 a:hover {
+    text-decoration: underline;
+}
+
+#bottomContainer .line2 button {
+    margin-bottom: 16px;
+    border: none;
+    background-color: transparent;
+    color: #0071eb;
+    cursor: pointer;
+}
+
+#bottomContainer .line2 button:hover {
+    text-decoration: underline;
+}
+
+
+#bottomContainer .line2 .firstLine {
+    display: flex;
+}
+
+#bottomContainer .line2 p {
+    color: #8c8c8c;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#bottomContainer .line2 a {
+    text-decoration: none;
+    color: #0071eb;
+}
+
+#bottomContainer .line2 a:hover {
+    text-decoration: underline;
+}
+
+#bottomContainer .line2 .hidden {
+    display: none;
+    transition: 1s;
+}
+
+/* #bottomContainer .line2 .active{
+    display: block;
+} */
+
+
+.lineBreak{
+    /* display: none; */
+    margin: 10px 0;
+    height: 1px;
+    color: #737373;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .75);
+    margin-top: 70px;
+}
+
+#footer {
+    color: rgba(255, 255, 255, 0.7);
+    /* padding: 35px 255px */
+    max-width: 1000px;
+    margin: auto;
+    padding: 32px 12px;
+}
+
+#footer .footer1 {
+    margin-bottom: 2rem;
+}
+
+#footer a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #737373;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#footer .footer2 {
+    margin-bottom: 2.5rem;
+}
+
+#footer .footer2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+
+}
+
+#footer .footer2 ul li {
+    flex-basis: calc(25%);
+    list-style: none;
+    margin-top: 12px;
+
+}
+
+#footer .footer2 ul li a {
+    color: #737373;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1;
+    cursor: pointer;
+}
+
+#footer .footer2 ul li a:hover {
+    text-decoration: underline;
+
+}
+
+#footer .footer2 {
+    font-size: 0.875rem;
+}
+
+#end {
+    height: 40px;
+    background-color: #fff;
+}
+
+
+
+@media screen and (max-width: 740px) {
+    body {
+        background-image: none;
+        background-color: #737373;
+    }
+    
+    #nav {
+        padding: 17px 18px;
+        background-color: #000;
+    }
+    
+    #container {
+        width: 100%;
+        padding: 14px 30px 0px;
+        min-height: 578px;
+        background-color: #000;
+        padding-bottom: 28px;
+        border-radius: 0;
+    }
+    
+    #container .emailLabel {
+        top: 18.8%;
+    }
+    
+    #container .passwordLabel {
+        top: 30.3%;
+    }
+    #container:focus-within .emailLabel {
+        top: 16.8%;
+    }
+    
+    #container:focus-within .passwordLabel {
+        top: 28.3%;
+    }
+    
+    #bottomContainer .line2 p {
+        margin-bottom: 15px;
+    }
+    
+    footer{
+        margin-top: 1px;
+        background-color: #000;
+}
+
+#footer{
+        padding: 10px 36px;
+        padding-top: 35px;
+    }
+    #footer a {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    #footer .footer2 ul li a {
+        font-size: 0.85rem;
+        font-weight: 400;
+    }
+    #footer .footer2 ul li {
+        flex-basis: calc(33%);
+    }
+    #end{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    #nav img {
+        width: 75px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #container {
+        min-height: 650px;
+    }
+    #container .emailLabel {
+        top: 16.9%;
+    }
+    #container .passwordLabel {
+        top: 27%;
+    }
+    #container:focus-within .emailLabel {
+        top: 14.9%;
+    }
+    #container:focus-within .passwordLabel {
+        top: 25%;
+    }
+    #footer{
+        padding: 32px 24px 10px 24px;
+    }
+    #footer .footer2 ul li {
+        flex-basis: calc(50%);
+    }
+    #end{
+        display: none;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/favIcon-removebg-preview.png" type="image/x-icon" />
+    <link rel="stylesheet" href="singIn.css" />
+    <title>Netflix</title>
+</head>
+
+<body>
+    <script src="signIn.js"></script>
+    <div id="nav" class="setWidth">
+        <a href="index.html"><img src="imgs/logo.png" alt="" /></a>
+    </div>
+    <div id="container">
+        <div class="heading">Sign In</div>
+        <!-- <label for="email" class="emailLabel active">Email or Phone Number</label> -->
+        <input type="email" id="email" placeholder="Email or Phone Number"/>
+        <!-- <label for="email" class="passwordLabel active">Password</label> -->
+        <input type="password" id="password" placeholder="Password"/>
+        <button class="signInBtn">Sign In</button>
+        <div class="cont">
+            <div class="checkboxContainer">
+                <input type="checkbox" id="rememberMe" />
+                <label for="rememberMe">Remember me</label>
+            </div>
+            <a href="#" class="help">Need help?</a>
+        </div>
+
+        <div id="bottomContainer">
+            <div class="line1">
+                New to Netflix?
+                <a href="/index.html">Sign up now</a>
+                .
+            </div>
+            <div class="line2">
+                <p>
+                    <span>
+                        This page is protected by Google reCAPTCHA to ensure you're not a
+                        bot.
+                    </span>
+                    <button id="learnMoreBtn">Learn more.</button>
+                </p>
+                <p id="hiddenSection" class="hidden">
+                    The information collected by Google reCAPTCHA is subject to the
+                    Google <a href="#">Privacy Policy</a> and
+                    <a href="#">Terms of Service</a>, and is used for providing,
+                    maintaining, and improving the reCAPTCHA service and for general
+                    security purposes (it is not used for personalized advertising by
+                    Google).
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- <hr class="lineBreak"> -->
+
+        <div id="footer" class="setWidth">
+            <div class="footer1">
+                <a href="#footer">Questions? Contact us.</a>
+            </div>
+            <div class="footer2">
+                <ul>
+                    <li><a href="#faqs">FAQ</a></li>
+                    <li><a href="#footer">Help Center</a></li>
+                    <li><a href="#footer">Terms of Use</a></li>
+                    <li><a href="#footer">Privacy</a></li>
+                    <li><a href="#footer">Cookie Preferences</a></li>
+                    <li><a href="#footer">Caporate Information</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div id="end"></div>
+</body>
+
+</html>
